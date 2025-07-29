@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { PiPhoneCall } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -17,17 +18,25 @@ const Footer = () => {
       </div>
 
       <ul className="text-sm md:text-xl">
+      <li className="flex gap-1 items-center">
+        <PiPhoneCall size={20} />
+        +91 8085334014
+
+         
+      </li>
+
+
         <li className="flex gap-1 items-center">
           <MdOutlineEmail size={20} />
-          myemail@gmail.com
+          rachnapandey1109@gmail.com
         </li>
         <li className="flex gap-1 items-center">
           <CiLinkedin />
-          linkdlin.com/username
+          https://www.linkedin.com/in/rachna-pandey-5b1b6b291
         </li>
         <li className="flex gap-1 items-center">
           <FaGithub />
-          github.com/username
+         https://github.com/Rachnapandey16
         </li>
       </ul>
     </div>

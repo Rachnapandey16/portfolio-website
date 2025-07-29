@@ -1,24 +1,35 @@
 import React from "react";
-import avatarImg from "../../assets/7358602-removebg-preview.png";
+import Dp from "../../assets/image/Dp.jpg";
 import TextChange from "../TextChange";
 
 const Home = () => {
   return (
-    <div className="text-white flex w-full justify-between items-start p-10 md:p-20">
-      <div className="md:w-2/4 md:pt-10 ">
-        <h1 className="text-xl md:text-6xl font-bold flex leading-normal tracking-tighter">
+    <div className="w-full min-h-screen bg-black text-white px-4 sm:px-6 md:px-10 lg:px-20 py-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+      
+      {/* Left Section - Text */}
+      <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
           <TextChange />
         </h1>
-        <p className="text-sm md:text-2xl tracking-tight ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          doloremque?
+
+        <p className="mt-4 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl tracking-tight">
+          I’m a passionate Frontend Developer crafting responsive, user-friendly web experiences with clean code and creative design.
         </p>
-        <button className="mt-5 md:md-10 text-white py02 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+
+        <button className="mt-6 text-sm sm:text-base md:text-lg xl:text-xl py-2 px-5 bg-[#465697] rounded-full font-semibold hover:scale-105 hover:opacity-85 transition duration-300">
           Contact Me
         </button>
       </div>
-      <div>
-        <img className="" src={avatarImg} alt="" />
+
+      {/* Right Section - Profile Image */}
+      <div className="w-full lg:w-auto flex justify-center items-center">
+        <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
+          <img
+            src={Dp}
+            alt="Profile"
+            className=" w-[20vw] h-[20vw] object-cover rounded-full shadow-2xl border-4 border-white"
+          />
+        </div>
       </div>
     </div>
   );
