@@ -7,8 +7,8 @@ const Home = () => {
     <div className="w-full min-h-screen bg-black text-white px-4 sm:px-6 md:px-10 lg:px-20 py-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
       
       {/* Left Section - Text */}
-      <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
+      <div className="w-full lg:w-3/5 text-center lg:text-left">
+        <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
           <TextChange />
         </h1>
 
